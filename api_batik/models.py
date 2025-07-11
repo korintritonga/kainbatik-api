@@ -6,5 +6,5 @@ class KainBatik(models.Model):
     asal_daerah = models.CharField(max_length=100)
     harga = models.DecimalField(max_digits=10, decimal_places=2)
 
-    def _str_(self):
+    def __str__(self):
         return self.nama
